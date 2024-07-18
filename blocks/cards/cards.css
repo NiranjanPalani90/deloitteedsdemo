@@ -3,13 +3,15 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
-  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
 }
 
 .cards > ul > li {
-  border: 1px solid var(--dark-color);
-  background-color: var(--background-color);
+  border: 1px solid #4e5356;
+  background-color: #fdfcfc;
+  border-radius: 4px;
+  margin-right: 2.33%;
 }
 
 .cards .cards-card-body {
@@ -25,7 +27,56 @@
 }
 
 .cards > ul > li img {
+  width: 50%;
+  aspect-ratio: 6 / 4;
+  object-fit: scale-down;
+  margin: -15px 15px;
+}
+
+.cards .button-wrapper {
+  margin: 30px;
+  display: inline-block;
+}
+
+.cards-wrapper {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  max-width: 1080px;
+  margin: auto;
+  padding: 20px;
+}
+
+.cards > ul > li > div > div {
+  margin: 15px;
+  padding: 1px;
+}
+
+.cards > ul > li > div > h6 {
+  font-size: medium;
+}
+
+.cards > ul > li > div > p {
+  font-size: small;
+  margin : 15px;
+}
+
+.btn-bento-blue {
+  color: #fff;
+  background: #006fcf;
+  border-color: #006fcf;
+  border-radius: 4px;
+  height: 50px;
+  font-weight: 300;
+}
+
+.btn-bento-white {
+  color: #006fcf;
+  background: #fff;
+  border-color: #006fcf;
+  border-radius: 4px;
+  height: 50px;
+  font-weight: 300;
+}
+
+.btn-bento-white:hover {
+  color: #fff;
 }

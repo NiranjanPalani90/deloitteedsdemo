@@ -15,7 +15,7 @@
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
   --background-color: white;
-  --light-color: #eee;
+  --light-color: white;
   --dark-color: #ccc;
   --text-color: black;
 
@@ -93,12 +93,20 @@ h6 {
 
 h1 { font-size: var(--heading-font-size-xxl); }
 h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
-p,
+h3 {
+  color: #00175a !important;
+  fill: #00175a !important;
+  font-size: 2.375rem;
+  line-height: 2.75rem;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+
+
 dl,
 ol,
 ul,
@@ -106,6 +114,16 @@ pre,
 blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+p {
+  font-weight: 100;
+  font-size: medium;
+}
+
+strong {
+  font-weight: 100;
+  font-size: medium;
 }
 
 code,
@@ -156,7 +174,7 @@ button {
   cursor: pointer;
   color: var(--background-color);
   background-color: var(--link-color);
-  margin: 16px 0;
+  margin: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -208,7 +226,7 @@ main .section {
 
 @media (width >= 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 32px;
   }
 }
 
@@ -224,3 +242,4 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
