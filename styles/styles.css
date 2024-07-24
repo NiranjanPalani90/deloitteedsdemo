@@ -235,6 +235,10 @@ main .section {
   /* padding: 64px 16px; */
 }
 
+.hidden {
+  display: none;
+}
+
 @media (width >= 600px) {
   main .section {
     padding: 0;
