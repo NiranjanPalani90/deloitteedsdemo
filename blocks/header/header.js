@@ -148,11 +148,3 @@ export default async function decorate(block) {
   block.append(navWrapper);
 }
 
-// hide nav brand if its empty 
-document.addEventListener("DOMContentLoaded", (event) => {
-  const getNavBrand = document.querySelector(".nav-brand");
-  if (getNavBrand && getNavBrand.innerHTML.trim() === "") {
-    getNavBrand.classList.add("hidden");
-  }
-  
-});

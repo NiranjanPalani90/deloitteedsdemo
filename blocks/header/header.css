@@ -180,6 +180,10 @@ header .nav-brand ul{
   }
 }
 
+.nav-brand:empty {
+  display: none;
+}
+
 .nav-wrapper {
   /* background-color: var(--light-gray); */
 }
