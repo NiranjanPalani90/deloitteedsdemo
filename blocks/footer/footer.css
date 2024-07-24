@@ -14,32 +14,39 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
+
 .footer-wrapper .default-content-wrapper {
   display: flex;
   justify-content: space-between;
-  @media (max-width: 991px) {
+
+  @media (width <= 991px) {
     flex-direction: column;
     align-items: center;
   }
 }
+
 .footer-wrapper .default-content-wrapper p {
   color: var(--footer-text);
   line-height: 18px;
   font-size: 14px;
-  
 }
+
 .footer-wrapper .default-content-wrapper p:nth-child(2) {
-  @media (max-width: 991px) {
+  
+  @media (width <= 991px) {
     margin-top: 15px;
    }
 }
+
 .footer-wrapper p a {
   text-decoration: underline;
   color: var(--footer-text);
-  @media (max-width: 991px) {
+
+  @media (width <= 991px) {
    text-align: center;
    }
 }
+
 .footer-wrapper p a:hover {
   text-decoration: none;
 }
