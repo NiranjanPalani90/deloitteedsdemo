@@ -47,6 +47,6 @@ export default function decorate(block) {
     button.addEventListener('click', applyNow);
   });
   document.querySelectorAll('.learMore').forEach((button) => {
-      button.addEventListener('click', applyNow);
+    button.addEventListener('click', applyNow);
   });
 }
