@@ -151,23 +151,6 @@ header .nav-brand .default-content-wrapper{
   line-height: 1;
 }
 
-.nav-wrapper .nav-brand li, .nav-wrapper .nav-sections li{
- font-size: 16px;
- line-height: 24px;
- margin-left: 15px;
- margin-right: 15px;
- cursor: pointer;
- font-weight: bold;
-}
-
-.nav-wrapper .nav-brand li:hover,.nav-wrapper .nav-sections li:hover{
-  text-decoration: underline;
-}
-
-.nav-wrapper .nav-brand li:nth-child(1) {
-  margin-left: 0;
-}
-
 header .nav-brand ul{
   list-style-type: none;
   font-size: 25px;
@@ -178,10 +161,6 @@ header .nav-brand ul{
     letter-spacing: normal;
     padding: 0;
   }
-}
-
-.nav-brand:empty {
-  display: none;
 }
 
 .nav-wrapper nav {
@@ -228,6 +207,13 @@ header nav[aria-expanded='true'] .nav-sections {
   align-self: start;
 }
 
+header nav .nav-sections ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: var(--body-font-size-s);
+  font-weight: 500;
+}
+
 header nav .nav-sections ul > li > ul {
   margin-top: 0;
 }
@@ -236,16 +222,26 @@ header nav .nav-sections ul > li {
   font-weight: 700;
 }
 
-header nav .nav-sections ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: var(--body-font-size-s);
-  font-weight: 500;
-}
-
 header nav .nav-sections ul > li > ul > li {
   font-weight: 500;
 }
+
+.nav-wrapper .nav-brand li, .nav-wrapper .nav-sections li{
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+  font-weight: bold;
+ }
+ 
+ .nav-wrapper .nav-brand li:hover,.nav-wrapper .nav-sections li:hover{
+   text-decoration: underline;
+ }
+ 
+ .nav-wrapper .nav-brand li:nth-child(1) {
+   margin-left: 0;
+ }
 
 @media (width >= 900px) {
   header nav .nav-sections {
