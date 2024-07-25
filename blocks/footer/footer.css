@@ -32,7 +32,6 @@ footer .footer p {
 }
 
 .footer-wrapper .default-content-wrapper p:nth-child(2) {
-  
   @media (width <= 991px) {
     margin-top: 15px;
    }
