@@ -22,6 +22,7 @@ module.exports = {
     'prefer-arrow-callback': 'off',
     'comma-dangle': 'off',
     'color-function-notation': 'off',
-    'alpha-value-notation': 'off'
+    'alpha-value-notation': 'off',
+    'no-descending-specificity': 'off'
   },
 };
