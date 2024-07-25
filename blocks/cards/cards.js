@@ -26,11 +26,12 @@ export default function decorate(block) {
     const applyButton = document.createElement('button');
     applyButton.textContent = 'Apply now';
     applyButton.className = 'btn-primary btn-bento-blue applyNow';
-    applyButton.setAttribute('href', '/content/edsnewdemo/index/card-landing.html');
+    applyButton.setAttribute('href', '/content/deloitteedsdemo/index/card-landing.html');
     buttonWrapper.appendChild(applyButton);
     const learnMoreButton = document.createElement('button');
     learnMoreButton.textContent = 'Learn more';
     learnMoreButton.className = 'btn-primary btn-bento-white learMore';
+    learnMoreButton.setAttribute('href', 'https://main--deloitteedsdemo--niranjanpalani90.hlx.page/plantinumcard');
     buttonWrapper.appendChild(learnMoreButton);
     li.append(buttonWrapper);
   });
@@ -44,5 +45,8 @@ export default function decorate(block) {
   block.append(ul);
   document.querySelectorAll('.applyNow').forEach((button) => {
     button.addEventListener('click', applyNow);
+  });
+  document.querySelectorAll('.learMore').forEach((button) => {
+      button.addEventListener('click', applyNow);
   });
 }
