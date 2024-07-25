@@ -18,6 +18,11 @@
   --light-color: white;
   --dark-color: #ccc;
   --text-color: black;
+  --light-gray: #d1daf4;
+  --search-border: #80808078;
+  --footer-border: #d6dbde;
+  --footer-text: #545D63;
+
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
@@ -206,6 +211,12 @@ main img {
   max-width: 100%;
   width: auto;
   height: auto;
+
+  @media (width >= 992px) {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
 .icon {
@@ -221,18 +232,22 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  /* padding: 64px 16px; */
+}
+
+.hidden {
+  display: none;
 }
 
 @media (width >= 600px) {
   main .section {
-    padding: 32px;
+    padding: 0;
   }
 }
 
 @media (width >= 900px) {
   .section > div {
-    max-width: 1200px;
+   /* / max-width: 1200px; */
     margin: auto;
   }
 }
@@ -243,3 +258,33 @@ main .section.highlight {
   background-color: var(--light-color);
 }
 
+/* container styling */
+.container, main .default-content-wrapper,nav,.columns-wrapper,.footer {
+  max-width: 100%; 
+
+ @media (width >= 577px) {
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ @media (width >= 576px) {
+     max-width: 540px;
+     margin: 0 auto;
+ }
+
+ @media (width >= 768px) {
+     max-width: 720px;
+ }
+
+ @media (width >= 992px) {
+     max-width: 960px;
+ }
+
+ @media (width >= 1200px) {
+     max-width: 1140px;  
+ }
+
+ @media (width >= 1400px) {
+     max-width: 1320px;
+ }
+}
