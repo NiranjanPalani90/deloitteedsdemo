@@ -1,3 +1,19 @@
+function submitForm(form) {
+  var formElements = document.getElementByClassName("form-grid").elements;
+  var firstName = formElements.item(1).value;
+  var lastName = formElements.item(2).value;
+  var dob = formElements.item(3).value;
+  var pan = formElements.item(4).value;
+  var email = formElements.item(5).value;
+  var mobile = formElements.item(6).value;
+  var pinCode = formElements.item(8).value;
+  var _id = Math.ceil(Math.random()*10000);
+  var customerAccountNumberID = Math.ceil(Math.random()*1000000000);
+  var gender = formElements.item(7).value;
+  var planName = 'platinum';
+  var
+}
+
 export default function decorate(block) {
   const form = document.createElement('form');
   form.className = 'form-grid';
@@ -15,6 +31,13 @@ export default function decorate(block) {
     { label: 'PAN', type: 'text', id: 'pan', required: true },
     { label: 'Email', type: 'email', id: 'email', required: true },
     { label: 'Mobile Number', type: 'tel', id: 'mobile', required: true },
+    {
+      label: 'Gender',
+      type: 'select',
+      id: 'gender',
+      options: ['Male', 'Female'],
+      required: true,
+    },
     {
       label: 'Current Address Pin Code',
       type: 'text',
@@ -97,7 +120,11 @@ export default function decorate(block) {
 
   const submitButton = document.createElement('button');
   submitButton.type = 'submit';
+  submitButton.className = 'submitButton';
   submitButton.innerText = 'Submit';
   form.appendChild(submitButton);
   block.append(form);
+  document.querySelectorAll('.submitButton').forEach((button) => {
+    button.addEventListener('click', submitForm);
+  });
 }
