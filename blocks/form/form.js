@@ -11,7 +11,6 @@ function submitForm(form) {
   var customerAccountNumberID = Math.ceil(Math.random()*1000000000);
   var gender = formElements.item(7).value;
   var planName = 'platinum';
-  var
 }
 
 export default function decorate(block) {
