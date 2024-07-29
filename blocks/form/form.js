@@ -7,8 +7,8 @@ function submitForm(form) {
   const email = formElements.item(5).value;
   const mobile = formElements.item(6).value;
   const pinCode = formElements.item(8).value;
-  const _id = Math.ceil(Math.random()*10000);
-  const customerAccountNumberID = Math.ceil(Math.random()*1000000000);
+  const id = Math.ceil(Math.random() * 10000);
+  const customerAccountNumberID = Math.ceil(Math.random() * 1000000000);
   const gender = formElements.item(7).value;
   const planName = 'platinum';
 }
