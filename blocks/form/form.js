@@ -1,36 +1,3 @@
-function submitForm() {
-  const formElements = document.querySelector('.form-grid').elements;
-  const firstName = formElements.item(1).value;
-  const lastName = formElements.item(2).value;
-  // const dob = formElements.item(3).value;
-  const pan = formElements.item(4).value;
-  const email = formElements.item(5).value;
-  const mobile = formElements.item(6).value;
-  // const pinCode = formElements.item(7).value;
-  const id = Math.ceil(Math.random() * 10000);
-  const customerAccountNumberID = Math.ceil(Math.random()*1000000000);
-  // const gender = formElements.item(7).value;
-  const city = formElements.item(11).value;
-  // const country =  formElements.item(12).value;
-  const planName = 'platinum';
-  const payload = {
-    '_id': id,
-    'customerAccountNumberID': customerAccountNumberID,
-    'customerAccountNumber': '00120241090',
-    'PanCard': pan,
-    'AadharNumber': '0987633475422',
-    'firstName': firstName,
-    'lastName': lastName,
-    'city': city,
-    'country': 'India',
-    'postalCode': 110005,
-    'gender': 'male',
-    'email' : email,
-    'mobileNumer' : mobile,
-    'planName' : planName,
-  };
-  fetchData(payload);
-}
 async function fetchData(payload_data) {
   const response = await fetch("https://dcs.adobedc.net/collection/f5266c1a71a9b29facc5eb1c0112a640dbd335e0d022c3a15f6ffddfbaf359be", {
     method: "POST",
@@ -42,6 +9,37 @@ async function fetchData(payload_data) {
   });
   const data = await response.json();
   console.log(data);
+}
+
+function submitForm() {
+  const formElements = document.getElementByClassName('form-grid').elements;
+  const firstName = formElements.item(1).value;
+  const lastName = formElements.item(2).value;
+  const dob = formElements.item(3).value;
+  const pan = formElements.item(4).value;
+  const email = formElements.item(5).value;
+  const mobile = formElements.item(6).value;
+  const pinCode = formElements.item(8).value;
+  const id = Math.ceil(Math.random() * 10000);
+  const customerAccountNumberID = Math.ceil(Math.random() * 1000000000);
+  const gender = formElements.item(7).value;
+  const planName = 'platinum';
+  const city = formElements.item(11).value;
+  const payload = {
+    'id': id,
+    'customerAccountNumberID': customerAccountNumberID,
+    'PanCard': pan,
+    'firstName': firstName,
+    'lastName': lastName,
+    'city': city,
+    'postalCode': pinCode,
+    'gender': gender,
+    'email' : email,
+    'mobileNumer' : mobile,
+    'planName' : planName,
+    'dob': dob,
+  };
+  fetchData(payload);
 }
 
 export default function decorate(block) {
