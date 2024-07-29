@@ -1,16 +1,16 @@
 function submitForm(form) {
-  var formElements = document.getElementByClassName("form-grid").elements;
-  var firstName = formElements.item(1).value;
-  var lastName = formElements.item(2).value;
-  var dob = formElements.item(3).value;
-  var pan = formElements.item(4).value;
-  var email = formElements.item(5).value;
-  var mobile = formElements.item(6).value;
-  var pinCode = formElements.item(8).value;
-  var _id = Math.ceil(Math.random()*10000);
-  var customerAccountNumberID = Math.ceil(Math.random()*1000000000);
-  var gender = formElements.item(7).value;
-  var planName = 'platinum';
+  let formElements = document.getElementByClassName('form-grid').elements;
+  let firstName = formElements.item(1).value;
+  let lastName = formElements.item(2).value;
+  let dob = formElements.item(3).value;
+  let pan = formElements.item(4).value;
+  let email = formElements.item(5).value;
+  let mobile = formElements.item(6).value;
+  let pinCode = formElements.item(8).value;
+  let _id = Math.ceil(Math.random()*10000);
+  let customerAccountNumberID = Math.ceil(Math.random()*1000000000);
+  let gender = formElements.item(7).value;
+  let planName = 'platinum';
 }
 
 export default function decorate(block) {

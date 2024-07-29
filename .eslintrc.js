@@ -23,6 +23,7 @@ module.exports = {
     'comma-dangle': 'off',
     'color-function-notation': 'off',
     'alpha-value-notation': 'off',
-    'no-descending-specificity': 'off'
+    'no-descending-specificity': 'off',
+    ' no-unused-vars' : 'off'
   },
 };
