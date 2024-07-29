@@ -24,6 +24,6 @@ module.exports = {
     'color-function-notation': 'off',
     'alpha-value-notation': 'off',
     'no-descending-specificity': 'off',
-    'no-unused-vars' : 'off'
+    'no-unused-vars': 'off'
   },
 };

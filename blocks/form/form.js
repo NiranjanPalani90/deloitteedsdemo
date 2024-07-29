@@ -1,18 +1,18 @@
-async function fetchData(payload_data) {
-  const response = await fetch("https://dcs.adobedc.net/collection/f5266c1a71a9b29facc5eb1c0112a640dbd335e0d022c3a15f6ffddfbaf359be", {
-    method: "POST",
+async function fetchData(payloadData) {
+  const response = await fetch('https://dcs.adobedc.net/collection/f5266c1a71a9b29facc5eb1c0112a640dbd335e0d022c3a15f6ffddfbaf359be', {
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
-      "x-adobe-flow-id": '67655120-2a2e-4111-b4b9-9b8221810b03',
+      'Content-Type': 'application/json',
+      'x-adobe-flow-id': '67655120-2a2e-4111-b4b9-9b8221810b03',
     },
-    body: JSON.stringify({ payload_data }),
+    body: JSON.stringify({ payloadData }),
   });
   const data = await response.json();
   console.log(data);
 }
 
 function submitForm() {
-  const formElements = document.getElementByClassName('form-grid').elements;
+  const formElements = document.querySelector('.form-grid').elements;
   const firstName = formElements.item(1).value;
   const lastName = formElements.item(2).value;
   const dob = formElements.item(3).value;
@@ -26,18 +26,18 @@ function submitForm() {
   const planName = 'platinum';
   const city = formElements.item(11).value;
   const payload = {
-    'id': id,
-    'customerAccountNumberID': customerAccountNumberID,
-    'PanCard': pan,
-    'firstName': firstName,
-    'lastName': lastName,
-    'city': city,
-    'postalCode': pinCode,
-    'gender': gender,
-    'email' : email,
-    'mobileNumer' : mobile,
-    'planName' : planName,
-    'dob': dob,
+    id: id,
+    customerAccountNumberID: customerAccountNumberID,
+    PanCard: pan,
+    firstName: firstName,
+    lastName: lastName,
+    city: city,
+    postalCode: pinCode,
+    gender: gender,
+    email: email,
+    mobileNumer: mobile,
+    planName: planName,
+    dob: dob,
   };
   fetchData(payload);
 }
