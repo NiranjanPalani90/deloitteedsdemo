@@ -14,7 +14,8 @@ async function fetchData(payloadData) {
   console.log(data);
 }
 
-function submitForm() {
+function submitForm(event) {
+  event.preventDefault();
   const formElements = document.querySelector('.form-grid').elements;
   const firstName = formElements.item(1).value;
   const lastName = formElements.item(2).value;
