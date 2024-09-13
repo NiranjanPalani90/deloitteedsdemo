@@ -147,11 +147,9 @@
         "valueType": "string"
       },
       {
-        "component": "button",
-        "valueType": "string",
+        "component": "buttons",
         "name": "applyNow",
-        "label": "Apply Now",
-        "multi": false
+        "label": "Apply Now"
       },
       {
         "component": "text",
