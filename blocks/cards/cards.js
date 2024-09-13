@@ -26,7 +26,7 @@ export default function decorate(block) {
     const applyButton = document.createElement('button');
     applyButton.textContent = 'Apply now';
     applyButton.className = 'btn-primary btn-bento-blue applyNow';
-    applyButton.setAttribute('href', '/content/deloitteedsdemo/index/card-landing.html');
+    applyButton.setAttribute('href', 'index/card-landing');
     buttonWrapper.appendChild(applyButton);
     const learnMoreButton = document.createElement('button');
     learnMoreButton.textContent = 'Learn more';
