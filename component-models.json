@@ -147,7 +147,7 @@
         "valueType": "string"
       },
       {
-        "component": "reference",
+        "component": "text",
         "valueType": "string",
         "name": "link",
         "label": "link",
