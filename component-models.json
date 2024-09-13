@@ -148,8 +148,9 @@
       },
       {
         "component": "buttons",
-        "name": "applyNow",
-        "label": "Apply Now"
+        "name": "href",
+        "label": "Apply Now",
+        "title" : "Apply Now"
       },
       {
         "component": "text",
