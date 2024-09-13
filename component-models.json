@@ -149,8 +149,15 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "link",
-        "label": "link",
+        "name": "applyNow",
+        "label": "Apply Now",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "learnMoreLink",
+        "label": "Learn More",
         "multi": false
       }
     ]
