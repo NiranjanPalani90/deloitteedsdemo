@@ -1,5 +1,2 @@
 mountpoints:
-  /:
-    url: "https://author-p105957-e1283031.adobeaemcloud.com/bin/franklin.delivery/NiranjanPalani90/deloitteedsdemo/main"
-    type: "markup"
-    suffix: ".html"
+  /: https://drive.google.com/drive/u/0/folders/10sL6hKE7iC6Zf2cA1DBV5TcIX-ADFNHy
