@@ -15,7 +15,8 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "customblock"
     ]
   },
   {
@@ -28,7 +29,8 @@
       "hero",
       "cards",
       "columns",
-      "form"
+      "form",
+      "customblock"
     ]
   },
   {

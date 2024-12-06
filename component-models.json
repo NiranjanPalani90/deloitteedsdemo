@@ -210,5 +210,17 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "text",
+        "name": "text",
+        "value": "",
+        "label": "Custom Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]
