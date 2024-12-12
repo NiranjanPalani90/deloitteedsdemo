@@ -19,23 +19,7 @@ export default function decorate(block) {
     });
     ul.append(li);
   });
-
-  ul.querySelectorAll('li').forEach((li) => {
-    const buttonWrapper = document.createElement('div');
-    buttonWrapper.className = 'button-wrapper';
-    const applyButton = document.createElement('button');
-    applyButton.textContent = 'Apply now';
-    applyButton.className = 'btn-primary btn-bento-blue applyNow';
-    applyButton.setAttribute('href', 'index/card-landing');
-    buttonWrapper.appendChild(applyButton);
-    const learnMoreButton = document.createElement('button');
-    learnMoreButton.textContent = 'Learn more';
-    learnMoreButton.className = 'btn-primary btn-bento-white learMore';
-    learnMoreButton.setAttribute('href', 'https://main--deloitteedsdemo--niranjanpalani90.hlx.page/plantinumcard');
-    buttonWrapper.appendChild(learnMoreButton);
-    li.append(buttonWrapper);
-  });
-
+  
   ul.querySelectorAll('picture > img').forEach((img) => {
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
     moveInstrumentation(img, optimizedPic.querySelector('img'));
@@ -43,10 +27,4 @@ export default function decorate(block) {
   });
   block.textContent = '';
   block.append(ul);
-  document.querySelectorAll('.applyNow').forEach((button) => {
-    button.addEventListener('click', applyNow);
-  });
-  document.querySelectorAll('.learMore').forEach((button) => {
-    button.addEventListener('click', applyNow);
-  });
 }
